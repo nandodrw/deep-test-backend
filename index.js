@@ -48,7 +48,7 @@ http.createServer((req, res) => {
   const controller = routeHandler ? routeHandler.controller : metricController.notFound
   controller(req, res, reqUrl)
 
-}).listen(8080, () => {
+}).listen(process.env.PORT || 8080, () => {
   console.log('Server is running at http://127.0.0.1:8080/')
 })
 
