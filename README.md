@@ -4,6 +4,10 @@
 
 https://deep-test-fernando.herokuapp.com
 
+## App recording
+
+![app Demo](https://github.com/nandodrw/deep-test-backend/blob/master/assets/Screen%20Recording%202020-06-12%20at%2019.41.05.gif)
+
 ## API Documentation
 
 ### Register new metric
