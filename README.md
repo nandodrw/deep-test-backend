@@ -2,7 +2,7 @@
 
 ## Deployment URL (API can be consumed from this URL):
 
-https://deep-test-fernando.herokuapp.com
+https://deep-test-fernando.herokuapp.com (since free tier of heroku shut down the service after certain time, it is not possible to test from this URL the feature of delete metric older than two hour. It is possible to test this feature in a local deployment).
 
 ## App recording
 
