@@ -24,7 +24,8 @@ class MetricController {
       if (typeof(payload) !== 'object' || !payload.hasOwnProperty('value') || isNaN(Number(payload.value)))
         return this.requestError(req, res)
 
-      dataService.storeMetric(reqUrl.pathname.substr(8), Math.floor(payload.value))
+      // Each entry is rounded to the closed integer
+      dataService.storeMetric(reqUrl.pathname.substr(8), Math.round(payload.value))
       res.writeHead(200);
       res.end();
     })
