@@ -2,7 +2,7 @@
 
 ## Deployment URL (API can be consumed from this URL):
 
-https://deep-test-fernando.herokuapp.com (since free tier of heroku shut down the service after certain time, it is not possible to test from this URL the feature of delete metric older than two hour. It is possible to test this feature in a local deployment).
+http://157.245.253.15
 
 ## App recording
 
@@ -12,7 +12,7 @@ https://deep-test-fernando.herokuapp.com (since free tier of heroku shut down th
 
 ### Register new metric
 
-**HTTP Request:** `POST https://deep-test-fernando.herokuapp.com/metric/:metric-name`
+**HTTP Request:** `POST http://157.245.253.15/metric/:metric-name`
 
 **JSON Payload:**
 
@@ -24,7 +24,7 @@ https://deep-test-fernando.herokuapp.com (since free tier of heroku shut down th
 
 ### Register metric sum
 
-**HTTP Request:** `POST https://deep-test-fernando.herokuapp.com/metric/:metric-name/sum`
+**HTTP Request:** `POST http://157.245.253.15/metric/:metric-name/sum`
 
 # Shortcuts or improvements to do
 
