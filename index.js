@@ -55,4 +55,4 @@ http.createServer((req, res) => {
 
 /******** WORKERS *********/
 
-require('./workers/index.js')()
+require('./workers/index.js')

@@ -1,12 +1,11 @@
+const workerEngine = require('./worker-engine')
 const deleteOldMetricWorker = require('./delete-old-metrics')
+const config = require('../config')
 
-// The will be executed every this time expressed in milliseconds
-const WORKER_EXECUTION_DELAY = 1000
+workers = [
+  deleteOldMetricWorker(config.MAX_METRIC_ENTRY_DURATION)
+]
 
-module.exports = function fireWorkers() {
-  const deleteOldMetricWorker = require('./delete-old-metrics')
-  setInterval(() => {
-    deleteOldMetricWorker()
-  }, WORKER_EXECUTION_DELAY)
-
-}
+// Fire worker engine wit a set of workers which
+// represent logic that should run every some timestamp
+workerEngine.startWorker(workers, config.WORKER_EXECUTION_DELAY)

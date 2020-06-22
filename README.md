@@ -28,6 +28,6 @@ https://deep-test-fernando.herokuapp.com
 
 # Shortcuts or improvements to do
 
-* Add unit testing.
+* Add integration testing (unit testing is included for the most critical components).
 * Probably use Typescript for type checking (this will need a bundle pipeline).
 * Execute worker on a different threat (hard to do at the moment because the in memory database).

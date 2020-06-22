@@ -13,7 +13,6 @@ class MetricController {
     });
 
     req.on('end', () => {
-
       let payload;
 
       try {
